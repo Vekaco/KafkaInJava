@@ -5,13 +5,11 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
-import java.util.SimpleTimeZone;
 
-public class KafkaProducerDemo {
+public class BasicProducer {
     public static void main(String[] args) {
         Properties props = new Properties();
         props.setProperty("bootstrap.servers", "localhost:9092");
